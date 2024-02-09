@@ -1,5 +1,5 @@
 const express = require('express');
-require('dotenv').config();
+require('dotenv').config({ path: '../.env' });
 const { graphqlHTTP } = require('express-graphql');
 const schema = require('./schema/schema.js');
 const port = process.env.PORT || 5500;
